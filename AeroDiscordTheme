@@ -16,7 +16,6 @@
 @import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/unshittifyupdated.css");
 @import url("https://raw.githubusercontent.com/axberu/vencord-css-snippets/main/hide_store_nitro_tabs.css");
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/better-social-links.css");
-@import url("https://raw.githubusercontent.com/numoder/DSN7/refs/heads/master/dsn7.theme.css");
 
 /* Hide Titlebar */
 /*
@@ -29,6 +28,7 @@
 }
 
 :root {
+    --font-size: 11px;
     --custom-app-top-bar-height: 0px;
 }
 
