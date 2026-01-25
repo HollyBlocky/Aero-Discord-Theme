@@ -1,11 +1,3 @@
-/**
-* @name DTM-08 Edited
-* @author 11pixels
-* @version 2
-* @description A skeuomorphic theme for Discord. Edited for no backgrounds.
-* @source https://github.com/XYZenix/XYZenixThemes/
-* @invite pM2uZheDud
-*/
 @property --dtm-08-rounded-icons {
   syntax: "true | false";
   inherits: true;
