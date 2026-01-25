@@ -54,5 +54,5 @@ div[aria-label="Channels"] > div > div[style*="84px"] {
     display: none !important;
 }
 ```
-2. Install all files in the [theme] folder locally and enable them. **Importing any of these local files, and online theming, does not work completely for a reason I am unsure of.**
+2. Install all files in the theme folder locally and enable them. **Importing any of these local files, and online theming, does not work completely for a reason I am unsure of.**
 ----
