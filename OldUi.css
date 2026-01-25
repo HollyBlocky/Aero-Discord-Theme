@@ -1,0 +1,236 @@
+/**
+ * @name Old Ui
+ * @author Skekung
+ * @authorLink https://github.com/Skektec
+ * @description A theme to restore the old look of discord.
+ * @license GPL-3.0
+ * @version 1.0
+ */
+
+/* @import url("https://github.com/Skektec/DiscordOldUi"); */
+
+/* Variables */
+.visual-refresh {
+  --size: 48; /* visual refresh is 40, old discord is 48 */
+  --guildbar-avatar-size: calc(var(--size) * 1px);
+  --guildbar-folder-size: var(--g-48);
+  --g-48: calc(var(--guildbar-avatar-size) + 8px);
+  --g-19-r: calc((var(--size) / 2 - 1) / var(--size) * 40px);
+  --g-40-r: calc(var(--guildbar-avatar-size) / (var(--size) + 8) * 48);
+  --g-48-r: calc(var(--guildbar-avatar-size) * 48 / 40);
+  --g-56-r: calc(var(--g-48) * 56 / 48);
+  --g-4-r: calc((var(--g-48-r) - var(--guildbar-avatar-size)) / -2);
+  --g-4-r-2: calc((var(--g-56-r) - var(--g-48)) / -2);
+}
+
+.wordmarkWindows__05c46 {
+  top: 0;
+  left: 0;
+  padding: 4px 8px;
+  position: relative;
+}
+
+.winButton__05c46 {
+  top: 0;
+  height: 22px;
+  width: 30px;
+  position: relative;
+}
+
+/* Adjust the app layout to account for the title bar */
+.layers__1c917 .baseLayer__1c917 {
+  margin-top: 0;
+}
+
+/* Panel layout fixes */
+.visual-refresh section.panels_a4d4d9 {
+  left: calc(var(--custom-guild-list-width));
+  width: calc(100% - calc(var(--custom-guild-list-width)));
+  bottom: 0;
+  border-radius: 0;
+  border: none;
+  border-top: 1px solid var(--border-faint);
+}
+
+.visual-refresh section.panels_a4d4d9 .e131a99484292a19-actionButtons button {
+  padding: 0; /* Fix vc buttons resizing weirdly */
+}
+
+.visual-refresh section.panels_a4d4d9 .activityPanel_a4d4d9 {
+  border-radius: inherit;
+}
+
+nav.guilds_a4d4d9,
+#channels {
+  margin-bottom: 0 !important;
+}
+
+/* Hide bar at bottom of server list */
+.sidebar_a4d4d9:after {
+  display: none;
+}
+
+/* Better Folders Fix */
+.visual-refresh
+  [style$="grid-area: betterFoldersSidebar;"]
+  ~ section.panels_a4d4d9 {
+  left: calc(var(--custom-guild-list-width) * 2);
+  width: calc(100% - var(--custom-guild-list-width) * 2) !important;
+}
+
+/* Remove gaps between buttons */
+div[class*="buttons_"] {
+  gap: 0 !important;
+}
+
+/* Form modal height fix */
+.visual-refresh [class^="layer_"] > form > [class^="focusLock__"] {
+  position: relative;
+  max-height: calc(100vh - var(--space-24) * 3);
+  top: calc(var(--space-24) / 2);
+}
+
+/* Server icon and folder styling */
+.visual-refresh ._48112cbe77dc5022-folderIcon > .cc5dd25190031396-wrapper {
+  width: var(--g-48) !important;
+  height: var(--g-48) !important;
+}
+
+.visual-refresh ._48112cbe77dc5022-folderIcon > .cc5dd25190031396-wrapper > .cc5dd25190031396-svg {
+  width: var(--g-56-r);
+  height: var(--g-56-r);
+  top: var(--g-4-r-2);
+  left: var(--g-4-r-2);
+}
+
+.visual-refresh .cc5dd25190031396-svg {
+  width: var(--g-48-r);
+  height: var(--g-48-r);
+  top: var(--g-4-r);
+  left: var(--g-4-r);
+}
+
+.visual-refresh ._6e9f8dce4cc18de3-wrapper,
+.visual-refresh ._6e9f8dce4cc18de3-icon,
+.visual-refresh ._6e9f8dce4cc18de3-childWrapper {
+  width: 40px;
+  height: 40px;
+}
+
+.visual-refresh .folder_bc7085,
+.visual-refresh ._48112cbe77dc5022-folderIconWrapper {
+  width: 48px;
+  height: 48px;
+}
+
+.visual-refresh .expandedFolderIconWrapper_bc7085 {
+  width: var(--g-40-r);
+  height: var(--g-40-r);
+  margin: 0;
+}
+
+.visual-refresh .closedFolderIconWrapper_bc7085 {
+  width: var(--g-40-r);
+  height: var(--g-40-r);
+}
+
+.visual-refresh .guildIcon_bc7085 {
+  width: var(--g-19-r);
+  height: var(--g-19-r);
+}
+
+.visual-refresh .dbd2630aec71879b-stack {
+  height: auto !important;
+  padding-bottom: 4px !important;
+}
+
+.visual-refresh ._1f388bcaa446c0c8-tutorialContainer ._2b1f52e43a8f1c02-numberBadge {
+  outline: 2px solid var(--bg-base-tertiary);
+  border-radius: 50%;
+}
+
+.visual-refresh .ef3116c2da186559-unreadMentionsIndicatorBottom,
+.visual-refresh .ef3116c2da186559-unreadMentionsIndicatorTop {
+  width: calc(
+    var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2
+  );
+  padding: calc(var(--custom-guild-list-padding) / 2);
+}
+
+/* Round server icons */
+[class*="closedFolderIconWrapper_"] > [class*="guildIcon_"],
+[data-list-item-id*="guildsnav_"] > [class*="icon_"] {
+  border-radius: 50% !important;
+}
+
+/* Member list compression */
+.c8ffbb79449f399c-membersWrap {
+  min-width: unset;
+}
+
+.c8ffbb79449f399c-membersWrap > .c8ffbb79449f399c-members {
+  width: 225px;
+}
+
+.c8ffbb79449f399c-membersWrap > .c8ffbb79449f399c-members .c8ffbb79449f399c-membersGroup {
+  padding: 24px 0px 0 16px;
+  height: 40px;
+}
+
+.c8ffbb79449f399c-membersWrap
+  > .c8ffbb79449f399c-members
+  ._5d473ecff348c314-member
+  > div
+  > ._5d473ecff348c314-memberInner {
+  padding: 5px;
+}
+
+/* Fix profile section to extend to border */
+.container_ca50b9 {
+  margin: 0;
+  padding: 10px 10px 0 10px;
+  border-radius: 0 !important;
+}
+
+.panels_a4d4d9 {
+  margin-bottom: 0 !important;
+}
+
+.avatar_cd9df4,
+.avatarWrapper_dbd263 {
+  border-radius: 0 !important;
+}
+
+.panel_c48ade {
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Additional fixes for the profile panel */
+div[class^="sidebar_"] section[class^="panels_"] {
+  width: calc(
+    var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px
+  );
+  left: var(--custom-guild-list-width);
+  bottom: 0px;
+  border-radius: 0px !important;
+  border: none;
+  padding: 0px;
+}
+
+div[class^="sidebar_"] nav[class^="wrapper_"] {
+  margin-bottom: unset !important;
+}
+
+div[class^="sidebar_"] ._5dec784a68542d60-panel {
+  border-radius: 0px !important;
+}
+
+#vc-spotify-player {
+  border-radius: 0px !important;
+}
+
+div[class^="sidebar_"] ._629e4c86564a4ee7-scroller {
+  margin-bottom: unset !important;
+}
