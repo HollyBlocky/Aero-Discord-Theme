@@ -6,6 +6,13 @@ These theme files are intended to be used with light mode.
 #### Installation:
 1. Put the following in your Quick CSS:
 ```
+@import url("https://raw.githubusercontent.com/axberu/vencord-css-snippets/main/hide_store_nitro_tabs.css");
+
+/* Discriminator Plugin */
+:root{
+  --Discriminator-ShowBoth: "#4722"
+}
+
 /* Hide Titlebar */
 /*
 .c38106a3f0c3ca76-bar {
@@ -17,7 +24,6 @@ These theme files are intended to be used with light mode.
 }
 
 :root {
-    --font-size: 11px;
     --custom-app-top-bar-height: 0px;
 }
 
@@ -51,7 +57,7 @@ div[aria-label="Channels"] > div > div[style*="84px"] {
     display: none !important;
 }
 ```
-2. Install all files locally and enable them. Importing and online theming does not work completely for a reason I am unsure of.
+2. Install all files locally and enable them. **Importing any of these local files, and online theming, does not work completely for a reason I am unsure of.**
 3. Enable the following as online themes:
 ```
 https://raw.githubusercontent.com/numoder/DSN7/refs/heads/master/dsn7.theme.css
