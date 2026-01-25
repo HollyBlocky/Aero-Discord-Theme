@@ -6,7 +6,6 @@
  * @version 0.1
  */
 
-
 @import url("https://raw.githubusercontent.com/axberu/vencord-css-snippets/main/hide_store_nitro_tabs.css");
 @import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/ActivityStyleEmbeds.theme.css");
 @import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/Icon_Revert.css");
