@@ -3,7 +3,7 @@
  * @author NSPG911
  * @version 1.1.0
  * @description Moves around elements near the Chat Bar to be seamless with the message bar
- * @source https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css
+ * @authorlink https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css
 */
 
 :root {
@@ -125,3 +125,4 @@
         (10px * var(--rscb-use-fixed-attach-button))
     );
 }
+
