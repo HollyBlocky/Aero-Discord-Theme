@@ -1,0 +1,214 @@
+/**
+ * @name unshittyfy-updated
+ * @author Nak.kiwi
+ * @description Fix the blatant design mistakes and disalignments :D
+ * @version 0.0.1
+ */
+
+/* -----------------  UN-SHITIFY DISCORD ------------------- *//*
+
+By @nak.kiwi (You can call me Nakki, feel free visit wy cozy website at nak.kiwi)
+
+A personal project to fix the blatant design mistakes and disalignments in the Discord app.
+If it's unreadable, it's by design, I didn't want you to steal my secret sauce.
+
+This is a discord unoficcial theme, it is not affiliated with Discord in any way.
+If you are discord and wish for this to be taken down, please message me at hello@nak.kiwi
+
+
+*//* ------------------------------------------------------- */
+
+/* ----------------------- OPTIONS ------------------------- *//*
+
+- CIRCLE ICONS:
+	- See https://github.com/MaiRiosIPla/unshittify-discord/blob/main/README.md
+
+*//* ------------------------------------------------------- */
+
+/* Imports */
+/* Refreshed Seamless Chat Bar by NSPG911 */
+@import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/seamlesschatbarupdated.css");
+
+/* SETTINGS */
+:root {
+	/* Right padding of the top bar */
+	--top-bar-padding: 100px;
+	/* Icon scale */
+	--icon-scale: 1;
+
+	/* NSPG911 Refreshed Seamless Chat Bar */
+	/* Custom padding for the chat box */
+	--rscb-chat-box-padding: 8px;
+	/* Whether you want the chat to not move up and down when someone starts typing */
+	--rscb-no-jump-chat: 0;
+}
+
+/* User modal */
+.visual-refresh .panels_a4d4d9,
+.visual-refresh ._5e434347c823b592-panels,
+.visual-refresh .panels__5e434{
+	right: var(--space-xs) !important;
+	left: auto;
+	bottom: var(--space-xs);
+	width: calc(100% - var(--space-xs) * 2 - var(--custom-guild-list-width));
+	z-index: 200 !important;
+}
+
+/* Remove top row */
+.visual-refresh .base_a4d4d9,
+.visual-refresh ._5e434347c823b592-base,
+.visual-refresh .base__5e434{
+	grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
+}
+
+
+/* Top bar and dragging functionality */
+.c38106a3f0c3ca76-trailing,
+.trailing_c38106 {
+	gap: 2px;
+
+	/* margin-left: calc(var(--custom-guild-list-width) + var(--space-8)); */
+	width: max-content;
+
+	z-index: 2000 !important;
+	position: absolute;
+
+	background-color: var(--background-tertiary);
+	border-radius: var(--radius-sm);
+	top: 9px;
+	right: var(--space-xs);
+	left: unset;
+	padding: 0;
+	overflow: hidden;
+}
+.c38106a3f0c3ca76-bar::before,
+.base__5e434 .bar_c38106::before {
+	content: "";
+	position: fixed;
+	top:0;
+	right:0;
+	left: var(--custom-guild-sidebar-width);
+	height: 10px;
+	width: 200%;
+	z-index: -1 !important;
+}
+.c38106a3f0c3ca76-bar,
+.base__5e434 .bar_c38106 {
+	margin-left: var(--custom-guild-sidebar-width);
+	height: 20px;
+	min-height: unset !important;
+}
+
+/* Hide bar title */
+.title__85643,
+.c38106a3f0c3ca76-title,
+.title_c38106 {
+	display: none !important;
+}
+
+/* Make top icons not overlap bar icons*/
+._9293f6b2fc12398a-container,
+.upperContainer__9293f {
+	padding-right: var(--top-bar-padding) !important;
+	/* overflow: hidden !important; */
+}
+
+
+/* Align discord logo and left bar */
+.ef3116c2da186559-tree,
+.tutorialContainer__1f388 {
+	margin-top: 1rem;
+}
+
+/* Chat input bar */
+.f75fb00fb7356cbe-channelTextArea   {
+	margin-bottom: var(--space-xs);
+	._740174f3d6a2c8fe-inner {
+		--custom-channel-textarea-text-area-max-height: 56px;
+		--custom-channel-textarea-text-area-height: var(
+			--custom-channel-textarea-text-area-max-height
+		);
+	}
+}
+
+/* Fix for search bar */
+._496769951eb140fe-search > div,
+.focused__97492 > div {
+	display: flex !important;
+	flex-shrink: 1 !important;
+}
+.searchBar_a46bef,
+.searchBar__97492 {
+	width: auto !important;
+	min-width: 100px !important;
+}
+.search__49676{
+    margin-right: 10px;
+}
+
+/* Fix for user modal rescaling */
+.e131a99484292a19-actionButtons ._201d5e8a3c09670a-button {
+	padding: unset !important;
+}
+
+/* Fix for server bar overflowing */
+.ef3116c2da186559-itemsContainer, 
+.ef3116c2da186559-tree,
+.wrapper_ef3116 {
+	height: calc(100% - 1rem);
+}
+.visual-refresh .guilds_a4d4d9, .visual-refresh .ef3116c2da186559-wrapper {
+	margin-bottom: 0;
+}
+
+/* Hides second nav btns panel when settings menu is open */
+.systemBar_c38106{
+    display: none !important;
+}
+/* _____ Server icons scale _____________________________________________________*/
+
+/* FOLDER SCALING */
+.wrapper_bc7085 {
+	--guildbar-folder-size: calc(48px / var(--icon-scale));
+	--custom-guild-list-width: calc((var(--guildbar-avatar-size) + var(--custom-guild-list-padding)*2)/var(--icon-scale));
+	zoom: var(--icon-scale);
+}
+/* Open folder Icon */
+.folder_bc7085, ._48112cbe77dc5022-folderIconWrapper {
+    height: calc(var(--guildbar-folder-size) * var(--icon-scale));
+    width: calc(var(--guildbar-folder-size) * var(--icon-scale));
+}
+/* Folder BG */
+.visual-refresh .expandedFolderBackground_bc7085 {
+    left: calc(var(--custom-guild-list-padding)/var(--icon-scale) - (var(--guildbar-folder-size)* var(--icon-scale) - var(--guildbar-avatar-size)/var(--icon-scale))/2);
+	width: calc(var(--guildbar-folder-size) * var(--icon-scale));
+}
+/* Closed folders inner preview*/
+.visual-refresh .closedFolderIconWrapper_bc7085 {
+	zoom: var(--icon-scale);
+}
+/* DC logo */
+._1f388bcaa446c0c8-tutorialContainer > ._650eb104245d257b-listItem > ._918165dab2b1e10b-listItemWrapper, ._650eb104245d257b-tutorialContainer > ._650eb104245d257b-listItem > ._918165dab2b1e10b-listItemWrapper {
+	zoom: var(--icon-scale);
+}
+#app-mount > div.a3002d7de5be5280-appAsidePanelWrapper > div.a3002d7de5be5280-notAppAsidePanel > div.a3002d7de5be5280-app > div > div._960e4207cea8323e-layers._160d8e55254637e5-layers > div > div > div > div.content_a4d4d9 > div.sidebar_a4d4d9 > nav > ul > div.ef3116c2da186559-itemsContainer > div > div:nth-child(5) > div._918165dab2b1e10b-listItemWrapper > div {
+	zoom: var(--icon-scale);
+}
+
+/* SERVER SCALING */
+.dbd2630aec71879b-stack[aria-label="Servers"] > ._650eb104245d257b-listItem > div:nth-child(2) .cc5dd25190031396-wrapper {
+	zoom: var(--icon-scale);
+}
+.visual-refresh ._650eb104245d257b-listItem .cc5dd25190031396-wrapper:not(.wrapper_bc7085) {
+
+}
+
+/* HIDE USERNAMES (FOR DEV SNAPSHOTS) */
+/* ._0a06ed6ea040aa1b-username, .overflow_a82120 {
+	filter: blur(3px);
+} */
+
+/* Transitions for dev test */
+/* * {
+	transition: all 2s ease-in-out !important;
+} */
