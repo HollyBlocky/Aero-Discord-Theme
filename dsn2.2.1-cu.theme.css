@@ -1,10 +1,4 @@
-/**
- * @name (CU) AIO Discord Network Messenger
- * @author numoder
- * @version 2.2.1 hotfix
- * @description Based on early 2000s' MSN Messenger & MSN Explorer. Classes Updated.
- * @authorlink https://github.com/numoder/dsn10-theme
-*/
+
 
 :root {
     --font-primary: "Tahoma";
@@ -3589,3 +3583,4 @@ div.bd-select {
   }
 
   
+
