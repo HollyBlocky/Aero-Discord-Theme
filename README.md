@@ -8,11 +8,6 @@ These theme files are intended to be used with light mode.
 ```
 @import url("https://raw.githubusercontent.com/axberu/vencord-css-snippets/main/hide_store_nitro_tabs.css");
 
-/* Discriminator Plugin */
-:root{
-  --Discriminator-ShowBoth: "#4722"
-}
-
 /* Hide Titlebar */
 /*
 .c38106a3f0c3ca76-bar {
