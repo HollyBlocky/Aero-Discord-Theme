@@ -6,17 +6,7 @@
  * @version 0.1
  */
 
-@import url("https://raw.githubusercontent.com/axberu/vencord-css-snippets/main/hide_store_nitro_tabs.css");
-@import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/ActivityStyleEmbeds.theme.css");
-@import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/Icon_Revert.css");
-@import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/MSN.theme.css");
-@import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/OldUi.css");
 @import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/dsn2.2.1-cu.theme.css");
-@import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/dsn7-cu-snippet.theme.css");
-@import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/dtm-08-edited.css");
-@import url("https://raw.githubusercontent.com/HollyBlocky/Aero-Discord-Theme/refs/heads/main/unshittifyupdated.css");
-@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/better-social-links.css");
-@import url("https://raw.githubusercontent.com/numoder/DSN7/refs/heads/master/dsn7.theme.css");
 
 
 /* Hide Titlebar */
