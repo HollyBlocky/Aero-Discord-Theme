@@ -3,7 +3,7 @@
  * @author numoder
  * @version 2.2.1 hotfix
  * @description Based on early 2000s' MSN Messenger & MSN Explorer. Classes Updated.
- * @source https://github.com/numoder/dsn10-theme
+ * @authorlink https://github.com/numoder/dsn10-theme
 */
 
 :root {
@@ -3587,4 +3587,5 @@ div.bd-select {
     width: 24px;
     height: 24px;
   }
+
   
