@@ -9,6 +9,7 @@ These theme files are intended to be used with light mode.
 @import url("https://raw.githubusercontent.com/axberu/vencord-css-snippets/main/hide_store_nitro_tabs.css");
 @import url("https://raw.githubusercontent.com/numoder/DSN7/refs/heads/master/dsn7.theme.css");
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/better-social-links.css");
+@import url("https://rdf1337.github.io/DiscordSnippets/DisableActivity/main.css");
 
 /* Hide Titlebar */
 /*
@@ -44,14 +45,19 @@ div[class*="bannerVisible"] img[class^="bannerImg-"] {
 div[class*="bannerVisible"] div[class*="animatedContainer"] {
     /* display: none; */
     position: static;
-    margin-top: -50px;
+    margin-top: 0px;
     
     
 }
 
-
 div[aria-label="Channels"] > div > div[style*="84px"] {
     display: none !important;
+}
+
+/* RolesBorder */
+.roleName_af3987 {
+  color: hsl(0,0%,95%) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
 }
 ```
 2. Install all files in the theme folder locally and enable them. **Importing any of these local files, and online theming, does not work completely for a reason I am unsure of.**
