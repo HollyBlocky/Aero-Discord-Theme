@@ -55,4 +55,5 @@ div[aria-label="Channels"] > div > div[style*="84px"] {
 }
 ```
 2. Install all files in the theme folder locally and enable them. **Importing any of these local files, and online theming, does not work completely for a reason I am unsure of.**
+3. If your friends list looks weird (entirely blue) then you should try reenabling the local themes in a different order
 ----
